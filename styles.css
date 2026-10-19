@@ -1,0 +1,168 @@
+/* Core Document Configuration */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace, Georgia, serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f1ea; /* Warm vintage archival paper background */
+    color: #222222; /* High-contrast charcoal text */
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #9e1b1b; /* Crimson Accent line */
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header .logo span {
+    color: #e63946;
+}
+
+nav a {
+    color: #cccccc;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+/* Thematic Visual Hero Banner */
+.hero-section {
+    background: linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.95)), 
+                repeating-linear-gradient(0deg, #1a1a1a, #1a1a1a 2px, #262626 2px, #262626 4px); /* Classified document grid texture */
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 2px solid #333;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #e63946; /* Striking Red Title */
+    margin-bottom: 10px;
+}
+
+.hero-content .subtitle {
+    font-size: 18px;
+    color: #dddddd;
+    margin-bottom: 20px;
+}
+
+.hero-content .author {
+    font-size: 14px;
+    color: #888888;
+    text-transform: uppercase;
+}
+
+/* Research Content Blocks */
+.research-card {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 2px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #1a1a1a; /* Clean framing border */
+}
+
+h2 {
+    font-size: 24px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 60px;
+    height: 4px;
+    background-color: #9e1b1b; /* Crimson layout break */
+    margin-bottom: 25px;
+}
+
+/* Structured Column Layouts */
+.research-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.column {
+    flex: 1;
+}
+
+/* Bibliography Styling */
+.source-section {
+    border-left-color: #9e1b1b; /* Sources card highlighted in red */
+}
+
+.source-instruction {
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.source-list {
+    padding-left: 20px;
+}
+
+.source-list li {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* Footer layout */
+footer {
+    background-color: #1a1a1a;
+    color: #777777;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 13px;
+    border-top: 1px solid #333;
+}
+
+/* Responsive Adaptive Viewports for Mobile */
+@media (max-width: 768px) {
+    .research-grid {
+        flex-direction: column;
+        gap: 0;
+    }
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav a {
+        margin: 0 10px;
+    }
+    .hero-content h1 {
+        font-size: 32px;
+    }
+}
