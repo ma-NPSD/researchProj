@@ -1,2 +1,3 @@
 # Red Scare Research Project
-website for my research website
+- Website for my research website
+- https://ma-npsd.github.io/researchProj/
